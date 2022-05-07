@@ -1,0 +1,163 @@
+@import './breakpoints.scss';
+
+.list{
+    display: grid;
+    max-width: calc(100vw - 20px);
+    
+    grid-gap: 30px;
+    margin-bottom: 10px;
+    
+
+    @media screen and (max-width: $mobile){
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      padding: 0px 10px 20px 30px;    
+    }
+
+
+    @media screen and (min-width: $mobile){
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      padding: 15px 40px 20px;
+    }
+
+    @media screen and (min-width: $tablet) {
+       grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+       
+    }
+
+    @media screen and (min-width: $desktopMax) {
+      grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+    }
+}
+
+.item {
+  padding: 10px 20px ;
+
+  border-radius: 20px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+  border: none;
+  border: 3px solid rgb(3, 20, 255);
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 1px 1px 10px 10px #743be6;
+    cursor: zoom-in;
+    border: none;
+  }
+}
+
+.container{
+  display:flex;
+  @media screen and (max-width: $mobile) {
+      display: block;
+      text-align: center;
+  }
+}
+.img{ 
+  box-shadow: -6px 6px 15px 0px blue,
+      0px 1px 1px 0px red, -3px 3px 1px -1px red;
+  border-radius:50%;
+
+  @media screen and (max-width: $mobileMax) {
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+  }
+  
+  @media screen and (min-width: $tablet) {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+  }
+}
+.imgFocus{
+  box-shadow: 1px 1px 10px 10px #743be6;
+}
+
+.dataUser {
+  margin-left: 40px;
+  @media screen and (max-width: $mobile) {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+
+}
+.name {
+  font-weight: 500;
+  line-height: 1.2;
+  color: #000;
+  margin-bottom: 5px;
+
+ 
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  @media screen and (max-width: $mobile) {
+    max-width: 250px;
+    font-size: 20px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: $mobile) and (max-width: $mobileMax) {
+    max-width: 150px;
+    font-size: 20px;
+  }
+
+  @media screen and (min-width: $tablet) { 
+    max-width: 300px;
+    font-size: 36px;
+  }
+
+  @media screen and (min-width: $desktopMax) {
+    max-width: 400px;
+  }
+}
+
+.time{
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 5px;
+  color: #743be6;
+
+  @media screen and (max-width: $mobile) {
+    justify-content: center;
+  }
+
+  @media screen and (max-width: $mobileMax) {
+    font-size: 15px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 20px;
+  }
+  
+}
+.line{
+  display: block;
+  margin: 0px 10px;
+  background-color: rgb(41, 62, 252);
+  width: 3px;
+  height: 18px;
+}
+
+.speed{
+  color: rgb(41, 62, 252);
+}
+
+.text {
+  font-weight: 600;
+  line-height: 1.2;
+  color: rgb(0, 100, 167);
+
+  @media screen and (max-width: $mobileMax) {
+    font-size: 15px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 18px;
+  }
+}
