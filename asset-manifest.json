@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/elementals-studio-test/static/css/main.2dd4b52b.css",
+    "main.js": "/elementals-studio-test/static/js/main.a3e45930.js",
+    "static/media/images-fon.jpg": "/elementals-studio-test/static/media/images-fon.0ce2f15a984f55bbc364.jpg",
+    "static/media/sprite.svg": "/elementals-studio-test/static/media/sprite.bc55be2b8c4e023aaf33ccd2a0c78019.svg",
+    "index.html": "/elementals-studio-test/index.html",
+    "main.2dd4b52b.css.map": "/elementals-studio-test/static/css/main.2dd4b52b.css.map",
+    "main.a3e45930.js.map": "/elementals-studio-test/static/js/main.a3e45930.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2dd4b52b.css",
+    "static/js/main.a3e45930.js"
+  ]
+}
