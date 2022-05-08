@@ -54,8 +54,6 @@
   }
 }
 .img{ 
-  box-shadow: -6px 6px 15px 0px blue,
-      0px 1px 1px 0px red, -3px 3px 1px -1px red;
   border-radius:50%;
 
   @media screen and (max-width: $mobileMax) {

@@ -9,6 +9,7 @@
     background-color: rgba(142, 166, 243, 0.6);
     overflow: auto;
 
+    padding-bottom: 20px;
 
     @media screen and (max-width: $mobile){
       width: 100%;
@@ -43,7 +44,7 @@
   height: 400px;
 }
 ::-webkit-scrollbar-thumb{
-  background: linear-gradient(to bottom, rgb(12, 169, 180), rgb(12, 29, 180));
+  background: linear-gradient(to bottom, rgb(12, 29, 180), rgb(180, 57, 0));
   border-radius: 8px;
 }
 

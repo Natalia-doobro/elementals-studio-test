@@ -2,11 +2,11 @@ import sprite from '../../images/sprite.svg'
 import classNames from 'classnames';
 import s from '../../style/ListUsers.module.scss'
 
-function UsersCard({ id, name, speed, time, idCard }) {
+function UsersCard({ id, color, name, speed, time, idCard }) {
 
     return (
         <div className={s.container}>
-            <svg className={ id === idCard  ? classNames(s.img, s.imgFocus) : s.img}>
+            <svg className={ id === idCard  ? classNames(s.img, s.imgFocus) : s.img} style={{boxShadow: `-6px 6px 15px 0px ${color}, 0px 1px 1px 0px ${color}, -3px 3px 1px -1px ${color}`}}>
                 <use href={`${sprite}#icon-helmet`}></use>
             </svg>  
 
